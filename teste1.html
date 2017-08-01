@@ -2,9 +2,9 @@
 <body>
   <h1> Meu Site Fodao </h1>
 <script>
-//  UTILIZANDO COMANDO IF
-//  a = 2
+//  UTILIZANDO COMANDO IF >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 //  b = 8
+//  a = 2
 //  c = a + b
 //  if (c < 10)
 //  {
@@ -14,9 +14,10 @@
 //  } else {
 //  alert (c + " é igual a 10")
 //  }
+//   case "verde":
 
 
-// UTILIZANDO COMANDO SWITCH
+// UTILIZANDO COMANDO SWITCH >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 // farol = "amarelo"
 //
 // switch (farol) {
@@ -26,14 +27,13 @@
 //   case "amarelo" :
 //      alert("Diminua a velocidade")
 //      break
-//   case "verde":
 //      alert("Pode passar")
 //      break
-//  default:                 // Se todos os case forem falsos, o switch entra em default
 //      alert("Cor ilegal")
+//  default:                 // Se todos os case forem falsos, o switch entra em default
 // }
 
-// UTILIZANDO COMANDO FOR E WHILE
+// UTILIZANDO COMANDO FOR E WHILE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 //
 // a = 0
 //
@@ -46,19 +46,57 @@
 //      i++
 //    }
 //    alert(i + i)
-//
 // }
-//  prompt("Qual o último número que apareceu?")
 
-// UTILIZANDO LOGICA PAR OU IMPAR
-var idade = prompt("Digite quantos anos você tem")
-if (idade/2 % 1 == 0) {
-  alert(idade + " é um numero par")
+//
+// var idade = prompt("Digite quantos anos você tem")
+// UTILIZANDO LOGICA PAR OU IMPAR >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+//  prompt("Qual o último número que apareceu?")
+// if (idade/2 % 1 == 0) {
+//  alert(idade + " é um numero par")
+// } else {
+//  alert(idade + " é um numero impar")
+// }
+
+// UTILIZANDO FUNCTION >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+// function boasVindas() {
+//  alert("Bem vindo ao site")
+// }
+//  boasVindas();
+//
+// function varEntrada() {
+//  let entrada = "Teste";
+//  alert(entrada);
+// }
+//  varEntrada();  //Chamamos a função, dessa forma irá funcionar normalmente
+//
+// function parametros(nome, texto) {
+//  nome = '*' + nome + '*';
+//  alert(nome + ":" + " " + texto);
+// }
+//  parametros('Thiago', 'oi');
+//  parametros('Thiago');
+//
+// function soma(a, b) {
+//  return a + b;
+// }
+//  var resultado = soma(5, 6);
+//  alert(resultado);
+
+function filmeAdulto(idade) {
+  if (idade >= 18) {
+    return true;
+  } else {
+    return confirm('Tem permissão dos pais?');
+  }
+}
+let idade = prompt("Qual a sua idade?", 8);
+if (filmeAdulto(idade)) {
+  alert("Acesso garantido");
 } else {
-  alert(idade + " é um numero impar")
+  alert("Sai fora punheteiro");
 }
 
-
 </script>
-</body>
 </html>
+</body>
