@@ -48,9 +48,8 @@
 //    alert(i + i)
 // }
 
-//
-// var idade = prompt("Digite quantos anos você tem")
 // UTILIZANDO LOGICA PAR OU IMPAR >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+// var idade = prompt("Digite quantos anos você tem")
 //  prompt("Qual o último número que apareceu?")
 // if (idade/2 % 1 == 0) {
 //  alert(idade + " é um numero par")
@@ -82,20 +81,59 @@
 // }
 //  var resultado = soma(5, 6);
 //  alert(resultado);
+//
+// function filmeAdulto(idade) {
+//   if (idade >= 18) {
+//     return true;
+//   } else {
+//     return confirm('Tem permissão dos pais?');
+//   }
+// }
+// let idade = prompt("Qual a sua idade?", 8);
+// if (filmeAdulto(idade)) {
+//   alert("Acesso garantido");
+// } else {
+//   alert("Sai fora punheteiro");
+// }
+//
+// function minimo(a,b) {
+//   var a = prompt("Valor de 'a'");
+//   var b = prompt("Valor de 'b'");
+//     if (a>b) {
+//       alert(b);
+//     } else if (a==b) {
+//       alert(a + " é igual a " + b);
+//     } else {
+//       alert(a);
+//     }
+// }
+// minimo();
 
-function filmeAdulto(idade) {
-  if (idade >= 18) {
-    return true;
-  } else {
-    return confirm('Tem permissão dos pais?');
+function pow(x,n) {
+  var conta = 1
+  var x = prompt("Valor de x");
+  var n = prompt("Quantas vezes irá multiplicar o mesmo valor?");
+  for (var i = 0; i < n; i++) {
+    var conta = conta * x;
   }
+  alert(conta);
 }
-let idade = prompt("Qual a sua idade?", 8);
-if (filmeAdulto(idade)) {
-  alert("Acesso garantido");
-} else {
-  alert("Sai fora punheteiro");
-}
+pow();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </script>
 </html>
